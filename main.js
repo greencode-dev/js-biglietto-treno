@@ -22,3 +22,6 @@ Prezzo Base: €${basePrice.toFixed(2)}
 Sconto applicato: ${discountRate * 100}%
 Prezzo Finale: €${finalPrice}
 ----------------`;
+
+// Stampa in Console:
+console.log(message);
