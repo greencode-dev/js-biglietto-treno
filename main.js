@@ -25,3 +25,15 @@ Prezzo Finale: €${finalPrice}
 
 // Stampa in Console:
 console.log(message);
+
+// Stampa in Pagina con formattazione HTML:
+const output = document.getElementById('result');
+output.innerHTML = `
+Riepilogo Biglietto:<br>
+----------------<br>
+Chilometri da percorrere: ${kmInput} km<br>
+Età passeggero: ${ageImput} anni<br>
+Prezzo Base: €${basePrice.toFixed(2)}<br>
+Sconto applicato: ${discountRate * 100}%<br>
+Prezzo Finale: €${finalPrice}<br>
+----------------`;
