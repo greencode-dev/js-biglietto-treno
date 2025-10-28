@@ -1,3 +1,12 @@
 // Input:
 const kmInput = prompt('Quanti chilometri vuoi percorrere?');
 const ageImput = prompt('Quanti anni hai?');
+
+// Elaborazione Dati:
+const km = parseFloat(kmInput);
+const age = parseInt(ageImput);
+
+const priceForKm = 0.21;
+const basePrice = km * priceForKm;
+const discountRate = age < 18 ? 0.2 : age > 65 ? 0.4 : 0;
+let finalPrice = (basePrice * (1 - discountRate)).toFixed(2);
